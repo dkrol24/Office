@@ -1,0 +1,21 @@
+.footer{
+    padding: 2px 0;
+    display: flex;
+}
+
+@media screen and (min-width: 768px){
+    .footer-content{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 0;
+        column-gap: 10px;
+        text-align: left;
+        justify-content: space-between;
+        display: flex;
+    }
+    .footer-content p{
+        text-align: left;
+    }
+    .footer-content span{
+        text-align: right;
+    }
+}

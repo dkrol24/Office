@@ -1,0 +1,120 @@
+.app__header{
+    min-height: 90vh;
+    height: 100%;
+    background: linear-gradient(rgba(73, 72, 72, 0.15), rgba(0, 0, 0, 0.2)), url("../../assets/images/about_main_img.jpg") center/cover no-repeat;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 6rem 0 5rem 0;
+}
+
+
+.infoheader {
+    position: absolute;
+    bottom: -5rem;
+    right: 0;
+    background: rgba(145, 73, 170, 0.90);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(145, 73, 170, 0.21);
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: start;
+
+  }
+  .col{
+    width: 215px;
+    height: 100%;
+    color: white;
+    margin: 0.5rem;
+  }
+  
+
+  
+.app__header-content{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 5rem;
+
+    width: 100%;
+    justify-content: start;
+    align-items: flex-start;
+    text-align: start;
+}
+.app__header-content-text{
+
+  padding: 1rem;
+
+  width: 730px;
+}
+
+.text-lead{
+  font-size: 2.5rem;
+  line-height: 1.4;
+  font-weight: 500;
+  color: white;
+  margin: 3.2rem 0 4.9rem 0;
+}
+
+.btn{
+    display: inline-block;
+    min-height: 48px;
+    min-width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-white);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.95;
+    align-self: center!important;
+    background: linear-gradient(to right, #543264,#8a4da6);
+    border-radius: 16px;
+ 
+  }
+.btn:hover{
+    background: linear-gradient(to right, #5b3e68,#8f5da6);
+    border: 1px solid #5b3e68;
+  }
+
+.app__header-btn span{
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 600px){
+    .app__header-title{
+        font-size: 88px;
+
+    }
+    .app__header-content *{
+        max-width: 920px;
+    }
+}
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .app__header-content{
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.app__header-content-text{
+  padding: 1rem;
+  margin-top: 1rem;
+  width: 100%
+}
+.text-lead{
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 500;
+  color: white;
+}
+    .infoheader {
+      position: relative;
+    }
+  }

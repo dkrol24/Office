@@ -1,0 +1,112 @@
+
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    height: 100%;
+}
+.item{
+    padding: 35px;
+    width: 329px;
+    margin: 1.2rem;
+    cursor:default;
+    transition: var(--transition);
+    position: relative;
+
+    background: rgba(145, 73, 170, 0.34);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    border: 1px solid rgba(145, 73, 170, 0.21);
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.item h4{
+    margin: 18px 0;
+    font-size: 18px;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+   
+}
+.item:hover{
+    transform: translateY(-2px);
+  }
+.item::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 5px;
+
+    background: linear-gradient(to right, #ac5fcf,#673b7d);
+    transition: var(--transition);
+}
+.item:hover::after{
+    width: 99%;
+    border-radius: 16px;
+}
+
+.item-icon{
+    font-size: 45px;
+}
+.item-list{
+
+    display: flex;
+    flex-wrap: wrap;
+  
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+
+.item-link{
+    margin-top: 18px;
+    display: inline-block;
+    transition: all 300ms linear;
+    color: #8e8e8e;
+}
+.item:hover .item-link{
+    color: var(--clr-white);
+}
+
+@media screen and (min-width: 768px){
+.item-list{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+ .item-list{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+    }
+    .services .item:last-child{
+        width: 100%;
+     }
+ 
+}
+@media screen and (min-width: 280px) and (max-width: 400px) {
+    .item{
+        padding: 15px;
+        text-align: start;
+        width: 259px;
+        margin: 1.2rem;
+     
+    
+    }
+  }
